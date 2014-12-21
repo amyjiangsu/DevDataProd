@@ -10,7 +10,7 @@ all_words <- select(BadLanguage, Offensive_Level, Target_Level2, Words, Year, Fr
 
 shinyServer(function(input, output, session) {
         
-        # Filter the movies, returning a data frame
+        # Filter the swear words, returning a data frame
         words <- reactive({
                 # Due to dplyr issue #318, we need temp variables for input values
                 minyear <- input$Year[1]
