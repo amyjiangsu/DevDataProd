@@ -66,6 +66,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 unit tests
 vignette
 a demo directory</code></pre>
+<pre><code>Answer: DESCRIPTION file</code></pre>
 </div>
 <div id="question-2" class="section level3">
 <h3>Question 2</h3>
@@ -74,6 +75,7 @@ a demo directory</code></pre>
 dgamma
 colSums
 lm</code></pre>
+<pre><code>Answer: predict</code></pre>
 </div>
 <div id="question-3" class="section level3">
 <h3>Question 3</h3>
@@ -82,6 +84,7 @@ lm</code></pre>
 showMethods()
 getMethod()
 getClass()</code></pre>
+<pre><code>Answer: getMethod()</code></pre>
 </div>
 <div id="question-4" class="section level3">
 <h3>Question 4</h3>
@@ -90,41 +93,59 @@ getClass()</code></pre>
 model.transform
 model.predict
 model.load</code></pre>
+<pre><code>Answer: model.predict</code></pre>
 </div>
 <div id="question-5" class="section level3">
 <h3>Question 5</h3>
 <p>Please download the R package DDPQuiz3 from the course web site. Examine the createmean function implemented in the R/ sub-directory. What is the appropriate text to place above the createmean function for Roxygen2 to create a complete help file?</p>
 <pre>
-    #' This function calculates the mean
-    #' 
-    #' @param x is a numeric vector
-    #' @export
-    #' @examples 
-    #' x &lt;- 1:10
-    #' createmean(x)
-    
-    #' This function calculates the mean
-    #' 
-    #' @param x is a numeric vector
-    #' @return the mean of x
-    #' @export
-    #' @examples 
-    #' x &lt;- 1:10
-    #' createmean(y)
-    
-    #' This function calculates the mean
-    #' 
-    #' @param x is a numeric vector
-    #' @return the mean of x
-    #' @export
-    #' @examples 
-    #' x &lt;- 1:10
-    #' createmean(x)
+#' This function calculates the mean
+#' 
+#' @param x is a numeric vector
+#' @export
+#' @examples 
+#' x &lt;- 1:10
+#' createmean(x)
+
+#' This function calculates the mean
+#' 
+#' @param x is a numeric vector
+#' @return the mean of x
+#' @export
+#' @examples 
+#' x &lt;- 1:10
+#' createmean(y)
+
+#' This function calculates the mean
+#' 
+#' @param x is a numeric vector
+#' @return the mean of x
+#' @export
+#' @examples 
+#' x &lt;- 1:10
+#' createmean(x)
+
+This function calculates the mean
+
+@param x is a numeric vector
+@return the mean of x
+@export
+@examples 
+x &lt;- 1:10
+createmean(x)
+
 </pre>
 
 
-
-
+<pre><code>Answer:
+#' This function calculates the mean
+#' 
+#' @param x is a numeric vector
+#' @return the mean of x
+#' @export
+#' @examples 
+#' x &lt;- 1:10
+#' createmean(x)</code></pre>
 </div>
 
 

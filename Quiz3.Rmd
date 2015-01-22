@@ -14,6 +14,10 @@ Which of the following items is required for an R package to pass R CMD check wi
     vignette
     a demo directory
 
+```
+Answer: DESCRIPTION file
+```
+
 ### Question 2
 
 Which of the following is a generic function in a fresh installation of R, with only the default packages loaded?
@@ -22,6 +26,10 @@ Which of the following is a generic function in a fresh installation of R, with 
     dgamma
     colSums
     lm
+
+```
+Answer: predict
+```
 
 ### Question 3
 
@@ -32,6 +40,10 @@ What function is used to obtain the function body for an S4 method function?
     getMethod()
     getClass()
 
+```
+Answer: getMethod()
+```
+
 ### Question 4
 
 Which one of the following functions must be defined in order to deploy an R function on yhat?
@@ -41,36 +53,61 @@ Which one of the following functions must be defined in order to deploy an R fun
     model.predict
     model.load
 
+```
+Answer: model.predict
+```
+
 ### Question 5
 
 Please download the R package DDPQuiz3 from the course web site. Examine the createmean function implemented in the R/ sub-directory. What is the appropriate text to place above the createmean function for Roxygen2 to create a complete help file?
 
 <pre>
-    #' This function calculates the mean
-    #' 
-    #' @param x is a numeric vector
-    #' @export
-    #' @examples 
-    #' x <- 1:10
-    #' createmean(x)
-    
-    #' This function calculates the mean
-    #' 
-    #' @param x is a numeric vector
-    #' @return the mean of x
-    #' @export
-    #' @examples 
-    #' x <- 1:10
-    #' createmean(y)
-    
-    #' This function calculates the mean
-    #' 
-    #' @param x is a numeric vector
-    #' @return the mean of x
-    #' @export
-    #' @examples 
-    #' x <- 1:10
-    #' createmean(x)
+#' This function calculates the mean
+#' 
+#' @param x is a numeric vector
+#' @export
+#' @examples 
+#' x <- 1:10
+#' createmean(x)
+
+#' This function calculates the mean
+#' 
+#' @param x is a numeric vector
+#' @return the mean of x
+#' @export
+#' @examples 
+#' x <- 1:10
+#' createmean(y)
+
+#' This function calculates the mean
+#' 
+#' @param x is a numeric vector
+#' @return the mean of x
+#' @export
+#' @examples 
+#' x <- 1:10
+#' createmean(x)
+
+This function calculates the mean
+
+@param x is a numeric vector
+@return the mean of x
+@export
+@examples 
+x <- 1:10
+createmean(x)
+
 </pre>
 
 
+```
+Answer:
+#' This function calculates the mean
+#' 
+#' @param x is a numeric vector
+#' @return the mean of x
+#' @export
+#' @examples 
+#' x <- 1:10
+#' createmean(x)
+```
